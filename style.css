@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(FACEBOOK\ BKG.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    backdrop-filter: blur(20px); 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Times New Roman';
+    letter-spacing: 1px;
+    margin-bottom: 13px; 
+}
+
+.inall{
+    background: rgba(177, 201, 212, 0.8);
+    padding: 37px;
+    margin-top: 150px;
+    border-radius: 19px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 500px;
+}
+
+.wave-group{
+    position: relative;
+}
+
+.wave-group .input {
+    font-size: 25px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+  }
+  
+  .wave-group .input:focus {
+    outline: none;
+  }
+  
+  .wave-group .label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    display: flex;
+  }
+  
+  .wave-group .label-char {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--index) * .05s);
+  }
+  
+  .wave-group .input:focus ~ label .label-char,
+  .wave-group .input:valid ~ label .label-char {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #5264AE;
+  }
+  
+  .wave-group .bar {
+    position: relative;
+    display: block;
+    width: 200px;
+  }
+  
+  .wave-group .bar:before,.wave-group .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  .wave-group .bar:before {
+    left: 50%;
+  }
+  
+  .wave-group .bar:after {
+    right: 50%;
+  }
+  
+  .wave-group .input:focus ~ .bar:before,
+  .wave-group .input:focus ~ .bar:after {
+    width: 50%;
+  }
+  
+
+.btn{
+    background-color: #007bff;
+    color: #fff;
+    margin-top: 20px;
+    padding: 11.55px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+  background-color: #0554a8;
+  box-shadow: 0 0 3px #000000;
+}
+
+#error-message{
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.inall .sign-up{
+    display: flex;
+    justify-content: center;
+}
+
+.inall .sign-up a{
+    text-decoration: none;
+    color: #1e08e7;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.inall .sign-up a:hover{
+    color: none;
+}
+
+.inall .sign-up p{
+    color: #fff;
+    font-size: 20px;
+    padding-top: 17px;
+}
+
+.log{
+    font-family: 'Times New Roman';
+    color: #0f96d4;
+    font-weight: 900;
+    font-size: 20px;
+}
