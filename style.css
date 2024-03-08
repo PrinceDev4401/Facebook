@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body{
@@ -12,17 +13,6 @@ body{
     align-items: center;
     display: flex;
     justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-h1{
-    color: #fff;
-    font-size: 45px;
-    text-align: center;
-    font-family: 'Times New Roman';
-    letter-spacing: 1px;
-    margin-bottom: 13px; 
 }
 
 .inall{
@@ -33,7 +23,25 @@ h1{
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
     text-align: center;
     width: 500px;
+    overflow: hidden;
 }
+
+h1{
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Times New Roman';
+    letter-spacing: 1px;
+    padding-bottom: 12px;
+}
+
+.log{
+  font-family: 'Times New Roman';
+  color: #0f96d4;
+  font-weight: 900;
+  font-size: 20px;
+}
+
 
 .wave-group{
     position: relative;
@@ -107,10 +115,15 @@ h1{
     width: 50%;
   }
   
+  #signupForm{
+    display: none;
+  }
 
 .btn{
     background-color: #007bff;
     color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
     margin-top: 20px;
     padding: 11.55px 30px;
     border: none;
@@ -123,38 +136,47 @@ h1{
   box-shadow: 0 0 3px #000000;
 }
 
-#error-message{
-  color: red;
-  font-weight: bold;
-  margin-top: 10px;
+#signup-link,
+#login-link{
+  text-decoration: none;
+  font-weight: 600;
+  color: #007bff;
 }
 
-.inall .sign-up{
-    display: flex;
-    justify-content: center;
+#signup-link:hover{
+  text-decoration: underline;
 }
 
-.inall .sign-up a{
-    text-decoration: none;
-    color: #1e08e7;
-    font-weight: 700;
-    padding-left: 10px;
-    padding-top: 20px;
+#login-link:hover{
+  text-decoration: underline;
 }
 
-.inall .sign-up a:hover{
-    color: none;
-}
-
-.inall .sign-up p{
+.sign-up p,
+.log-in p{
     color: #fff;
     font-size: 20px;
-    padding-top: 17px;
+    padding: 5px 0 0 0;
 }
 
-.log{
-    font-family: 'Times New Roman';
-    color: #0f96d4;
-    font-weight: 900;
-    font-size: 20px;
+.icons{
+  padding-top: 1.5rem;
 }
+
+.icons a{
+  font-size: 1.2rem;
+  padding: 15px;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: .2rem solid 007bff;
+  border-radius: 50%;
+  color: #fff;
+  margin: 3rem 1.5rem 3rem 0;
+  transition: .5s ease;
+}
+
+.icons a:hover{
+  background: #0554a8;
+  color: #fff;
+  box-shadow: 0 0 3px #000000;
+} 
