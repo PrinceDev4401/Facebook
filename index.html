@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-<title>facebook.com</title>
-<link rel="shortcut icon" 
-href="facebook icon.png" 
-type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="facebook icon.png" type="image/x-icon">
+  <title>facebook.com</title>
 </head>
 <body>
-
-<div class="inall">
+                    <!-- login starts -->
+<div id="loginForm" class="inall Login">
     <h1>FACEBOOK</h1>
     <p class="log">LOGIN</p>
     <div class="wave-group">
         <input required="" type="text" class="input" id="username">
         <span class="bar"></span>
         <label class="label">
-          <span class="label-char" style="--index: 0">E</span>
-          <span class="label-char" style="--index: 1">m</span>
-          <span class="label-char" style="--index: 2">a</span>
-          <span class="label-char" style="--index: 3">i</span>
-          <span class="label-char" style="--index: 4">l or N</span>
+          <span class="label-char" style="--index: 0">U</span>
+          <span class="label-char" style="--index: 1">s</span>
+          <span class="label-char" style="--index: 2">e</span>
+          <span class="label-char" style="--index: 3">r</span>
+          <span class="label-char" style="--index: 4">n</span>
+          <span class="label-char" style="--index: 4">a</span>
+          <span class="label-char" style="--index: 4">m</span>
+          <span class="label-char" style="--index: 4">e or N</span>
           <span class="label-char" style="--index: 5">u</span>
           <span class="label-char" style="--index: 6">m</span>
           <span class="label-char" style="--index: 7">b</span>
@@ -44,17 +48,89 @@ type="image/x-icon">
           <span class="label-char" style="--index: 7">d</span>
         </label>
       </div>
-        <button class="btn" onclick="checkLogin()">
-          <span>Login</span>
+        <button class="btn" onclick="login()">
+          <span>LOGIN</span>
           <span></span>
         </button>
-        <div id="error-message"></div>
 
-        <div class="sign-up">
+        <div  class="sign-up">
             <p>Don't have an account?</p>
-            <a href="#">Sign up</a>
+            <a href="#" id="signup-link">Signup</a>
+        </div>
+
+        <div class="icons">
+          <a href="#"><i class="bx bxl-gmail"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram-alt"></i></a>   
+        </div> 
+</div>
+                    <!-- login ends -->
+
+                    <!-- signup starts -->
+<di id="signupForm" class="inall Signup">
+    <h1>FACEBOOK</h1>
+    <p class="log">SIGNUP</p>
+    <div class="wave-group">
+        <input required="" type="text" class="input" id="new-username">
+        <span class="bar"></span>
+        <label class="label">
+          <span class="label-char" style="--index: 0">E</span>
+          <span class="label-char" style="--index: 1">n</span>
+          <span class="label-char" style="--index: 2">t</span>
+          <span class="label-char" style="--index: 3">e</span>
+          <span class="label-char" style="--index: 4">r U</span>
+          <span class="label-char" style="--index: 1">s</span>
+          <span class="label-char" style="--index: 2">e</span>
+          <span class="label-char" style="--index: 3">r</span>
+          <span class="label-char" style="--index: 4">n</span>
+          <span class="label-char" style="--index: 4">a</span>
+          <span class="label-char" style="--index: 4">m</span>
+          <span class="label-char" style="--index: 8">e or N</span>
+          <span class="label-char" style="--index: 9">u</span>
+          <span class="label-char" style="--index: 10">m</span>
+          <span class="label-char" style="--index: 11">b</span>
+          <span class="label-char" style="--index: 12">e</span>
+          <span class="label-char" style="--index: 13">r</span>
+        </label>
+      </div>
+      <br>
+      <br>
+      <div class="wave-group">
+        <input required="" type="password" class="input" id="new-password">
+        <span class="bar"></span>
+        <label class="label">
+          <span class="label-char" style="--index: 0">C</span>
+          <span class="label-char" style="--index: 0">r</span>
+          <span class="label-char" style="--index: 0">e</span>
+          <span class="label-char" style="--index: 0">a</span>
+          <span class="label-char" style="--index: 0">t</span>
+          <span class="label-char" style="--index: 0">e P</span>
+          <span class="label-char" style="--index: 1">a</span>
+          <span class="label-char" style="--index: 2">s</span>
+          <span class="label-char" style="--index: 3">s</span>
+          <span class="label-char" style="--index: 4">w</span>
+          <span class="label-char" style="--index: 5">o</span>
+          <span class="label-char" style="--index: 6">r</span>
+          <span class="label-char" style="--index: 7">d</span>
+        </label>
+      </div>
+        <button class="btn" onclick="register()">
+          <span>SIGNUP</span>
+          <span></span>
+        </button>
+
+        <div class="log-in">
+          <p>Already have an account?</p>
+          <a href="#" id="login-link">Login</a>
+        </div>
+
+        <div class="icons">
+          <a href="#"><i class="bx bxl-gmail"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram-alt"></i></a> 
         </div>
 </div>
+                    <!-- signup ends -->
 
 <script src="script.js"></script>
 </body>
